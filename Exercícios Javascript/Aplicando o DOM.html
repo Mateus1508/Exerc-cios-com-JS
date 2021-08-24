@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 1</title>
+</head>
+
+<body>
+    <h1>Exercício</h1>
+    <h2>Aplicando o DOM em um texto</h2>
+    <p id="texto"></p>
+
+
+    <script>
+        let nome = window.prompt('Digite seu nome: ');
+        document.getElementById('texto').innerHTML = `${nome} tanto falou que seu vizinho era um ladrão que o rapaz acabou sendo preso. Dias depois, descobriram que ele era inocente. O rapaz, então, foi solto e processou a mulher.
+
+        <br>— Comentários não causam tanto mal, disse ${nome} em sua defesa diante do tribunal.
+
+        <br>— Escreva os comentários num papel, depois pique-o e jogue os pedaços no caminho de casa. Amanhã, volte para ouvir a sentença, respondeu o juiz. ${nome} obedeceu e voltou no dia seguinte.
+
+        <br>— Antes da sentença, terá que recolher todos os pedaços de papel que espalhou ontem, disse o juiz.
+        <br>— Impossível, respondeu ${nome}. Já não sei onde estão.
+
+        <br>— Da mesma maneira, um simples comentário pode destruir a honra de um homem, e depois você não tem como consertar o mal, respondeu o juiz, condenando ${nome} à prisão.`
+
+    </script>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+
+        body,
+        h1,
+        h2 {
+
+            font-family: cursive;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        body.p {
+            text-align: justify;
+        }
+    </style>
+</body>
+
+</html>

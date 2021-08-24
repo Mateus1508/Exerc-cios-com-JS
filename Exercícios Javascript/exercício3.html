@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 3</title>
+</head>
+
+<body>
+    <h1>Exercício 3</h1>
+    <p id="coe">Aprendendo eventos no js</p>
+    <div id="click">
+        Clique aqui
+    </div>
+    <style>
+        body {
+            background-color: rgb(204, 204, 204);
+            color: rgb(0, 3, 1);
+
+        }
+
+        div#click {
+
+            color: gold;
+            font-size: 30px;
+            text-align: center;
+            line-height: 300px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: red;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.548);
+
+        }
+    </style>
+
+    <script>
+        var a = window.document.querySelector("div#click")
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseout', sair)
+
+        function entrar() {
+            a.style.background = 'brown'
+        }
+
+        function sair() {
+            a.style.background = 'red'
+            a.innerHTML = 'clique aqui'
+            a.style.color = 'gold'
+        }
+
+        function clicar() {
+            a.style.background = 'rgb(136, 6, 6)'
+            a.style.color = 'gold'
+            a.innerHTML = 'obrigado'
+        }
+
+
+    </script>
+</body>
+
+</html>
